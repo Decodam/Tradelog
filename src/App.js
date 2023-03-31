@@ -1,9 +1,12 @@
 import React, {  } from 'react';
+import Routes from './app/config/Routes';
 
 
 const App = (props) => {
     return(
-        <div>App</div>
+        <>
+            <Routes />
+        </>
     );
 }
 
