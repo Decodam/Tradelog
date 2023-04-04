@@ -39,6 +39,10 @@
     cursor: pointer;
 }
 
+.active_nav_item > .nav_icon{
+    color: #4b81ff;
+}
+
 .nav_item:hover{
     background-color: #f6f6f6;
 }

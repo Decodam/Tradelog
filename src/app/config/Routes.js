@@ -4,6 +4,8 @@ import { AiFillHome, AiFillDatabase, AiFillCalculator, AiFillSetting } from "rea
 import {Link} from "react-router-dom";
 
 const Routes = (props) => {
+
+
     return(
         <div id='container'>
             <div id="sidebar">
@@ -20,16 +22,17 @@ const Routes = (props) => {
 
 
                 <div className="nav_list">
-                    <Link to={`/`}><div className="nav_item"><AiFillHome className='nav_icon'/></div></Link>
-                    <Link to={`/trades`}><div className="nav_item"><AiFillDatabase className='nav_icon'/></div></Link>
-                    <Link to={`/tools`}><div className="nav_item"><AiFillCalculator className='nav_icon'/></div></Link>
-                    <Link to={`/settings`}><div className="nav_item"><AiFillSetting className='nav_icon'/></div></Link>
+                    <Link to={`/`}><div className={window.location.pathname === "/" ? "nav_item active_nav_item" : "nav_item"}><AiFillHome className='nav_icon'/></div></Link>
+                    <Link to={`/trades`}><div className={window.location.pathname === "/trades" ? "nav_item active_nav_item" : "nav_item"}><AiFillDatabase className='nav_icon'/></div></Link>
+                    <Link to={`/tools`}><div className={window.location.pathname === "/tools" ? "nav_item active_nav_item" : "nav_item"}><AiFillCalculator className='nav_icon'/></div></Link>
+                    <Link to={`/settings`}><div className={window.location.pathname === "/settings" ? "nav_item active_nav_item" : "nav_item"}><AiFillSetting className='nav_icon'/></div></Link>
                 </div>
 
 
                 <Link to={`/`}><img className='nav_acc' src="https://randomuser.me/api/portraits/women/44.jpg" alt="" /></Link>
             </div>
             <div id="content">
+                
                 {props.children}
             </div>
         </div>
