@@ -4,7 +4,9 @@ import '../styles/ToolsPage.css';
 
 const ToolsPage = (props) => {
     return(
-        <div>ToolsPage</div>
+        <div id="tools">
+            <h1>Tools</h1><br />
+        </div>
     );
 }
 

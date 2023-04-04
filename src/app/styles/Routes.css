@@ -43,9 +43,14 @@
     background-color: #f6f6f6;
 }
 
+.nav_item:hover > .nav_icon{
+    color: #4b81ff;
+}
+
 .nav_icon{
     color: #444444;
     font-size: 22px;
+    transition: 0.2s ease-in-out;
 }
 
 .nav_acc{

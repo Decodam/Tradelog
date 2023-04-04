@@ -4,7 +4,9 @@ import '../styles/SettingsPage.css';
 
 const SettingsPage = (props) => {
     return(
-        <div>SettingsPage</div>
+        <div id="settings">
+            <h1>Settings</h1><br />
+        </div>
     );
 }
 
